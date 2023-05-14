@@ -32,7 +32,7 @@ companies.forEach(function (company) {
 //new
 const adult = ages.filter(age=> age>21);
 
-// console.log(adult)
+console.log(adult)
 
 //company's category is retail
 const retail = companies.filter(company => company.category === "Retail")
