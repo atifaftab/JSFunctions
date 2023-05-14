@@ -16,7 +16,11 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //  FOREACH
 
 companies.forEach(function (company) {
-    console.log(company.name);
+    console.log(company.name +" "+ company.start);
+})
+
+companies.forEach(function (company){
+    console.log(company.category);
 })
 
 // FILTER
@@ -31,8 +35,12 @@ companies.forEach(function (company) {
 
 //new
 const adult = ages.filter(age=> age>21);
-
 console.log(adult)
+
+console.log(ages.filter(age => age<20))
+
+console.log("companies starts after 1990 and belongs to Finance category");
+console.log(companies.filter(company => company.start > 1980 && company.category ==='Finance'))
 
 //company's category is retail
 const retail = companies.filter(company => company.category === "Retail")
